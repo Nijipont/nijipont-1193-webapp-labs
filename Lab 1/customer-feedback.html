@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Customer Feedback Survey</title>
+</head>
+<body>
+    <h1><strong>Customer Feeback Survey</strong></h1>
+    <h3><em>Your opinion is matter to us! Please share your experience.</em></h3>
+    <form action="register" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <p>
+                <label for="fullname">Full Name *</label> <br>
+                <input 
+                type="text" id="fullname" name="fullname" required 
+                placeholder="Enter your full name" minlength="2" 
+                />
+            </p>
+            <p>
+                <label for="email">Email Address *</label> <br>
+                <input 
+                type="email" id="email" name="email" required 
+                placeholder="your.email@example.com" 
+                />
+            </p>
+            <p>
+                <label for="phone">Phone Number</label> <br>
+                <input 
+                type="tel" id="phone" name="phone" 
+                placeholder="+1 (555) 123-4567" 
+                />
+            </p>        
+            <p>
+                <label for="customerId">Customer ID</label> <br>
+                <input type="text" id="customerId" name="customerId"
+                placeholder="Enter your customer ID"
+                />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Service Evaluation</legend>
+            <p>
+                <label for="service rating">Overall Service Rating (1-5) </label> <br>
+                <input type="radio" id="poor" name="service rating" value="1" >
+                <label for="poor">1-Poor</label> <br>
+                <input type="radio" id="fair" name="service rating" value="2">
+                <label for="fair">2-Fair</label> <br>
+                <input type="radio" id="good" name="service rating" value="3">
+                <label for="good">3-Good</label> <br>
+                <input type="radio" id="very good" name="service rating" value="4">
+                <label for="very good">4-Very Good</label> <br>
+                <input type="radio" id="excellent" name="service rating" value="5">
+                <label for="excellent">5-Excellent</label> <br>
+            </p>
+            <p>
+                <label for="service category">Service Category *</label> <br>
+                <select name="service category" id="service category" required>
+                    <option value="" disabled selected>Select service category</option>
+                    <option value="technical support">Technical Support</option>
+                    <option value="sales">Sales</option>
+                    <option value="billing">Billing</option>
+                    <option value="general inquiry">General Inquiry</option>
+                </select>
+            </p>
+            <p>
+                <label for="recommend">Would you recommended our service to other ? *</label> <br>
+                <input type="radio" name="recommend" id="yes" value="yes">
+                <label for="yes">Yes,definitely</label> <br>
+                <input type="radio" name="recommend" id="maybe" value="maybe">
+                <label for="maybe">Maybe, I would</label> <br>
+                <input type="radio" name="recommend" id="no" value="no">
+                <label for="no">No,I would not</label> <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Experience Details</legend>
+            <p>
+                <label for="visit date">Visit Date</label> <br>
+                <input type="date" name="visit date" id="visit date">
+            </p>
+            <p>
+                <label for="how did you hear">How did you hear about us ? (Select all that apply)</label> <br>
+                <input type="checkbox" id="social media" name="how did you hear" value="social media">
+                <label for="social media">Social Media</label> <br>
+                <input type="checkbox" id="friend" name="how did you hear" value="friend">
+                <label for="friend">Friend or Family</label> <br>
+                <input type="checkbox" id="advertisement" name="how did you hear" value="advertisement">
+                <label for="advertisement">Advertisement</label> <br>
+                <input type="checkbox" id="search engine" name="how did you hear" value="search engine">
+                <label for="search engine">Search Engine</label> <br>
+                <input type="checkbox" id="other" name="how did you hear" value="other">
+                <label for="other">Other</label> <br>
+            </p>
+            <p>
+                <label for="comment">Additional Comments</label> <br>
+                <textarea name="comment" id="comment" rows="4" cols="50" 
+                placeholder="Please share your detailed feedback here...">
+                </textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Preferences</legend>
+            <p>
+                <label for="contact method">Preferred Contact Method</label> <br>
+                <input type="radio" id="email" name="contact method" value="email">
+                <label for="email">Email</label> <br>
+                <input type="radio" id="phone" name="contact method" value="phone">
+                <label for="phone">Phone</label> <br>
+                <input type="radio" id="sms" name="contact method" value="sms">
+                <label for="sms">SMS</label> <br>
+                <input type="radio" id="mail" name="contact method" value="mail">
+                <label for="mail">Mail</label> <br>
+            </p>
+            <p>
+                <label for="time contact">Best Time To Contact</label> <br>
+                <select name="time contact" id="time contact">
+                    <option value="" disabled selected>Select preferred time</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="night">Night</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <input type="checkbox" id="confirmed" name="confirmed" required>
+            <label for="confirmed">I confirmed that all information provided is accurate *</label>
+        </p>
+        <p>
+            <button>Submit Feedback</button>
+            <button>Clear All Fields</button>
+        </p>
+    </form>
+    <hr>
+    <p><strong>Note:</strong>Fields marked with * are required</p>
+</body>
+</html>
