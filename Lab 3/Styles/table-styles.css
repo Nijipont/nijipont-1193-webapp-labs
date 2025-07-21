@@ -18,10 +18,12 @@ h2 {
     color: #7f8c8d;
 }
 
-h3 {
+p {
     color: #788088;
     background-color: #EAECF0;
     padding: 8px;
+    font-style: italic;
+    text-align: center;
 }
 
 
