@@ -188,9 +188,9 @@ nav a:hover {
 }
 
 /* Point 3: Hover Effects - Display demo elements have hover effect changing background color */
-**.block-item:hover,
+.block-item:hover,
 .inline-item:hover,
 .inline-block-item:hover,
 .flex-item:hover {
   background-color: #2c3e50;
-}**
+}
