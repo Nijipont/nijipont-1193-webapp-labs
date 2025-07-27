@@ -24,11 +24,15 @@ body {
    Add responsive image rules and faculty photo styling
    ============================================ */
 /* TODO: Add base responsive image rule here (3 properties) */
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* TODO: Add faculty photo object-fit styling here (1 property) */
 .faculty-photo img {
-  
+  object-fit: cover;
 }
 
 /* University color scheme - PROVIDED */
@@ -54,7 +58,8 @@ body {
    ============================================ */
 .header-content {
   /* TODO: Add flexbox layout with space-between justification */
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 .department-logo {
@@ -82,7 +87,10 @@ body {
 
 .nav-menu {
   /* TODO: Add flexbox layout with gap 2 rem  between items */
-  
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  list-style: none;
 }
 
 .nav-menu a {
@@ -94,6 +102,12 @@ body {
 
 .nav-menu a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 /* Hero section - PROVIDED */
@@ -145,7 +159,9 @@ body {
    ============================================ */
 .faculty-grid {
   /* TODO: Add flexbox layout with gap 2rem and wrap */
-  
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .faculty-card {
@@ -156,6 +172,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   min-width: 300px;
+  flex: 1;
 }
 
 .faculty-photo {
@@ -165,7 +182,8 @@ body {
   overflow: hidden;
   margin: 0 auto 1rem;
  /* TODO: Flexbox: Center image within container */
-
+  display: flex;
+  align-items: center;
   background: var(--background-light);
 }
 
@@ -337,17 +355,26 @@ body {
   .programs-grid {
     justify-content: space-between;
   }
+
+  .nav-toggle {
+    display: none;
+  }
 }
 /* TODO: Add mobile media query here */
 /* Mobile styles (767px and below) */
 @media (max-width: 767px) {
   /* MOBILE NAVIGATION (1 point) */
   .nav-toggle {
-    /* TODO: set display property
+    /* TODO: set display property */
+    display: block;
+    background: none;
+    border: none;
+    color: white;
   }
 
   .header-content {
     /* Change to column direction */
+    flex-direction: column;
   }
 
 .main-nav {
@@ -367,6 +394,7 @@ body {
     padding: 1rem 0;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
   }
 
   .nav-menu.active {
@@ -405,10 +433,12 @@ body {
  
 .faculty-grid {
     /* Change to column direction */
+    flex-direction: column;
   }
   
   .faculty-card {
     /* Make cards full width */
+    min-width: 100%;
   }
 
 
