@@ -1,0 +1,430 @@
+/* =========================================
+   DEPARTMENT WEBSITE - SIMPLIFIED VERSION
+   Complete only the 4 TODO sections below
+   ========================================= */
+
+/* Universal reset and foundation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ============================================
+   ⭐ TODO SECTION 1: RESPONSIVE IMAGES (3 points)
+   Add responsive image rules and faculty photo styling
+   ============================================ */
+/* TODO: Add base responsive image rule here (3 properties) */
+
+
+/* TODO: Add faculty photo object-fit styling here (1 property) */
+.faculty-photo img {
+  
+}
+
+/* University color scheme - PROVIDED */
+:root {
+  --primary-blue: #1e40af;
+  --secondary-blue: #3b82f6;
+  --accent-gold: #f59e0b;
+  --text-light: #6b7280;
+  --background-light: #f8fafc;
+}
+
+/* Header base styling - PROVIDED */
+.site-header {
+  background: var(--primary-blue);
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   ⭐ TODO SECTION 2: HEADER FLEXBOX (4 points)
+   Complete flexbox layout for header and navigation
+   ============================================ */
+.header-content {
+  /* TODO: Add flexbox layout with space-between justification */
+  
+}
+
+.department-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-placeholder {
+  width: 50px;
+  height: 50px;
+  background: var(--accent-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+
+.department-logo h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.nav-menu {
+  /* TODO: Add flexbox layout with gap 2 rem  between items */
+  
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.nav-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero section - PROVIDED */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--accent-gold);
+  color: var(--primary-blue);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Faculty section base styling - PROVIDED */
+.faculty-section {
+  margin-bottom: 3rem;
+}
+
+.faculty-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-blue);
+}
+
+/* ============================================
+   ⭐ TODO SECTION 3: FACULTY FLEXBOX (4 points)
+   Complete flexbox layout for faculty grid and cards
+   ============================================ */
+.faculty-grid {
+  /* TODO: Add flexbox layout with gap 2rem and wrap */
+  
+}
+
+.faculty-card {
+  /* TODO: Add flex property for equal card sizing */
+  background: var(--background-light);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 300px;
+}
+
+.faculty-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+ /* TODO: Flexbox: Center image within container */
+
+  background: var(--background-light);
+}
+
+.faculty-info h3 {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faculty-title {
+  color: var(--secondary-blue);
+  font-weight: 600;
+ margin-bottom: 0.5rem;
+}
+
+.faculty-expertise {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+
+/* =========================================
+   PROGRAMS SECTION  
+   ========================================= */
+
+.programs-section {
+  padding: 4rem 0;
+  background: var(--background-light);
+}
+
+.programs-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--primary-blue);
+}
+
+/* FLEXBOX: Programs grid layout */
+.programs-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.program-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-3px);
+}
+
+.program-card h3 {
+  color: var(--primary-blue);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.program-duration {
+  color: var(--accent-gold);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.program-card p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.program-highlights {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.program-highlights li {
+  padding: 0.25rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.program-highlights li::before {
+  content: "✓ ";
+  color: var(--secondary-blue);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* =========================================
+   CONTACT SECTION - FLEXBOX (1 point)
+   ========================================= */
+
+.contact-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--primary-blue);
+}
+
+/* FLEXBOX: Contact content layout */
+.contact-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  flex: 1;
+  min-width: 250px;
+  background: var(--background-light);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* =========================================
+   FOOTER (1 point)
+   ========================================= */
+
+.site-footer {
+  background: var(--primary-blue);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.site-footer p {
+  opacity: 0.9;
+}
+
+/* ============================================
+   ⭐ TODO SECTION 4: MOBILE RESPONSIVE (2 points)
+   Add mobile breakpoint with direction changes
+   ============================================ */
+/* Tablet and small desktop (768px and up) */
+@media (min-width: 768px) {
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+
+  /* Ensure faculty and programs stay flexible */
+  .faculty-grid {
+    justify-content: space-around;
+  }
+
+  .programs-grid {
+    justify-content: space-between;
+  }
+}
+/* TODO: Add mobile media query here */
+/* Mobile styles (767px and below) */
+@media (max-width: 767px) {
+  /* MOBILE NAVIGATION (1 point) */
+  .nav-toggle {
+    /* TODO: set display property
+  }
+
+  .header-content {
+    /* Change to column direction */
+  }
+
+.main-nav {
+    width: 100%;
+    order: 3;
+  }
+
+  /* FLEXBOX: Mobile navigation menu */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--primary-blue);
+    flex-direction: column;
+    padding: 1rem 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+  }
+
+  .nav-menu li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Hero adjustments for mobile */
+  .hero-section {
+    padding: 3rem 1rem;
+    min-height: 40vh;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+ 
+.faculty-grid {
+    /* Change to column direction */
+  }
+  
+  .faculty-card {
+    /* Make cards full width */
+  }
+
+
+.programs-grid {
+    flex-direction: column;
+  }
+
+  .program-card {
+    min-width: 100%;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-item {
+    min-width: 100%;
+  }
+}
