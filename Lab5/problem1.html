@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>663040119-3 Prime Number Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/p1Style.css" />
+    <script src="lib/problem1.js"></script>
+</head>
+
+<body>
+    <script>
+        do {
+            input = parseFloat(prompt("Enter a positive integer"));
+        } while (!validateInput(input));
+        limit = input;
+        primes = findPrimes(limit);
+        displayPrimes(primes, limit);
+    </script>
+
+    <h1>Prime Numbers Finder!</h1>
+    <div class="container">
+        <h2>Write the web app to prompt accepting for a positive integer number</h2>
+        <ul>
+            <li>If the entered text is not a positive integer number, then the web app will keep asking for a number
+                until the valid positive integer is entered</li>
+            <li>If the entered text is a positive integer, then the web app will add into a list of prime numbers</li>
+        </ul>
+
+        <h2>Hint:</h2>
+        <p>1.You may want to use loop with label <br>
+            2.You may want to use array with push function</p>
+    </div>
+</body>
+
+</html>
