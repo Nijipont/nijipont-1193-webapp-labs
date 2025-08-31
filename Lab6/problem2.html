@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Challenge: Create a solar system</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .planet {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(0, 102, 204); 
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: 50px;
+        }
+        .moon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(245, 245, 178);
+            top: -10px; 
+            left: -40px;
+        }
+        .description {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .planet {
+                width: 80px;
+                height: 80px;
+            }
+            .moon {
+                width: 20px;
+                height: 20px;
+                top: -5px;
+                left: -25px;
+            }
+            .description {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<script>
+    const planet = document.createElement("div");
+    planet.classList.add("planet");
+    document.body.appendChild(planet);
+
+    const moon = document.createElement("div");
+    moon.classList.add("moon");
+    planet.appendChild(moon); 
+
+    const description = document.createElement("div");
+    description.textContent = "The planet and the moon";
+    description.classList.add("description");
+    description.style.color = "white"; 
+    document.body.appendChild(description);
+</script>
+</body>
+</html>
