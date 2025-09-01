@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Challenge: Mad Libs</title>
+</head>
+
+<body>
+    <h1>Mad Libs</h1>
+
+    <ul>
+        <li>Noun: <input type="text" id="noun" /></li>
+        <li>Adjective: <input type="text" id="adjective" /></li>
+        <li>Someone's Name: <input type="text" id="person" /></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <p>
+        Generated story:
+        <span id="story"></span>
+    </p>
+
+    <script>
+        let libButton = document.getElementById("lib-button");
+        let libIt = function () {
+            let noun = document.querySelector("#noun").value;
+            let adjective = document.querySelector("#adjective").value;
+            let person = document.querySelector("#person").value;
+            let story = `${person} is ${adjective} and likes ${noun}!`;
+
+            document.querySelector("#story").innerText = story;
+        };
+        libButton.addEventListener("click", libIt);
+    </script>
+</body>
+
+</html>
