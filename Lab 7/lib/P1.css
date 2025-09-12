@@ -1,0 +1,14 @@
+.avatar-img {
+    border: 5px solid blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
