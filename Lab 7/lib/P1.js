@@ -1,5 +1,6 @@
 fetch("https://api.github.com/users/Nijipont").then((response) => response.json())
 .then((data) => {
+        console.log(data);
         name_data = data.name;
         url_data = data.html_url;
         img_data = data.avatar_url;
