@@ -1,0 +1,12 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Calculator",
+  "scripts": {
+    "Calculator": "node Calculator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
