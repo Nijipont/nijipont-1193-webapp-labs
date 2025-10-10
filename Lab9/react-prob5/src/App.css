@@ -1,0 +1,22 @@
+
+.avatar-img {
+  background-size: cover;
+}
+
+.GitHubItem {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px; 
+}
+
+.repoURL {
+  display: block;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+p {
+  display: flex;
+  align-items: flex-end;
+}
